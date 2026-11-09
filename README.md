@@ -2,6 +2,8 @@
 
 A compact power-bank development project that connects enclosure CAD, circuit design, component placement and an interactive review UI. The work currently includes a routed bench boost-converter PCB and several compact packaging studies.
 
+The key engineering question is how to connect an enclosure target to an electrical operating point without treating either as proof of a working product. The CAD checks reservation volumes while the power model solves current, voltage sag and energy loss. [The engineering walkthrough](ENGINEERING.md) derives the equations and explains what the checks can reject.
+
 ![Spark Prototype A CAD render](assets/prototype-a-render.png)
 
 *Existing CAD render of Prototype A. It shows the intended enclosure; it is not a tested consumer power bank.*
