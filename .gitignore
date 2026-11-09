@@ -16,3 +16,4 @@ review/index.html
 review/parts.html
 review/comparison.html
 !assets/*.png
+!mechanical/print_parts/*.stl
