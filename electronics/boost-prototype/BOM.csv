@@ -1,0 +1,26 @@
+Reference,Quantity,Value,Manufacturer,MPN,Footprint,Status,Source
+U1,1,TPS61288LRQQR,Texas Instruments,TPS61288LRQQR,Spark:U1_TPS61288_RQQ0011A,Manufacturer part and pin map verified,https://www.ti.com/lit/ds/symlink/tps61288.pdf
+L1,1,2.2uH XAL1060-222MEC,Coilcraft,XAL1060-222MEC,Spark:L1_Coilcraft_XAL1060,"Manufacturer value, dimensions and land pattern verified",https://www.coilcraft.com/getmedia/8909f858-b441-4d60-acff-8b8ca36f9ede/xal1060.pdf
+C1,1,22uF 25V X7R 1210,Murata,GRM32ER71E226KE15L,Spark:C1_C_1210,Datasheet dimensions verified; effective capacitance and sourcing unverified,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71E226KE15-04CA.pdf
+C2,1,100nF 25V X7R 0402,,,Spark:C2_C_0402,Specification only; exact manufacturer part and ratings still require selection,
+C3,1,4.7uF 10V X5R 0603,KYOCERA AVX,0603ZD475KAT2A,Spark:C3_C_0603,TI EVM VCC capacitor part; effective capacitance must be confirmed,https://www.ti.com/lit/pdf/SLVUBW6
+C4,1,100nF 25V X7R 0402,,,Spark:C4_C_0402,Specification only; exact manufacturer part and ratings still require selection,
+C5,1,22uF 25V X7R 1210,Murata,GRM32ER71E226KE15L,Spark:C5_C_1210,Datasheet dimensions verified; effective capacitance and sourcing unverified,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71E226KE15-04CA.pdf
+C6,1,22uF 25V X7R 1210,Murata,GRM32ER71E226KE15L,Spark:C6_C_1210,Datasheet dimensions verified; effective capacitance and sourcing unverified,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71E226KE15-04CA.pdf
+C7,1,22uF 25V X7R 1210,Murata,GRM32ER71E226KE15L,Spark:C7_C_1210,Datasheet dimensions verified; effective capacitance and sourcing unverified,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71E226KE15-04CA.pdf
+C8,1,22uF 25V X7R 1210,Murata,GRM32ER71E226KE15L,Spark:C8_C_1210,Datasheet dimensions verified; effective capacitance and sourcing unverified,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71E226KE15-04CA.pdf
+C9,1,22uF 25V X7R 1210,Murata,GRM32ER71E226KE15L,Spark:C9_C_1210,Datasheet dimensions verified; effective capacitance and sourcing unverified,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71E226KE15-04CA.pdf
+C10,1,22uF 25V X7R 1210,Murata,GRM32ER71E226KE15L,Spark:C10_C_1210,Datasheet dimensions verified; effective capacitance and sourcing unverified,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71E226KE15-04CA.pdf
+R1,1,110k 0.1% 0402,,,Spark:R1_R_0402,Specification only; exact manufacturer part and ratings still require selection,
+R2,1,15k 0.1% 0402,,,Spark:R2_R_0402,Specification only; exact manufacturer part and ratings still require selection,
+R3,1,16.5k 0.1% 0402,,,Spark:R3_R_0402,Specification only; exact manufacturer part and ratings still require selection,
+JP1,0,9V SELECT NORMALLY OPEN,,,Spark:JP1_J_SolderJumper_OPEN,PCB feature; no purchased component,
+R4,1,12.4k 1% 0402,,,Spark:R4_R_0402,Specification only; exact manufacturer part and ratings still require selection,
+C11,1,8.2nF C0G 0402,,,Spark:C11_C_0402,Specification only; exact manufacturer part and ratings still require selection,
+C12,1,10pF C0G 0402,,,Spark:C12_C_0402,Specification only; exact manufacturer part and ratings still require selection,
+R5,1,100k 0402,,,Spark:R5_R_0402,Specification only; exact manufacturer part and ratings still require selection,
+J1,0,VIN +,,,Spark:J1_WirePad,PCB feature; no purchased component,
+J2,0,VIN GND,,,Spark:J2_WirePad,PCB feature; no purchased component,
+J3,0,VOUT +,,,Spark:J3_WirePad,PCB feature; no purchased component,
+J4,0,VOUT GND,,,Spark:J4_WirePad,PCB feature; no purchased component,
+J5,0,ENABLE 1.2-4.2V,,,Spark:J5_WirePad,PCB feature; no purchased component,

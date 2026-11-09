@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "scope": "Nominal component reservations and case envelopes only; no routed circuit or physical tests",
+  "versions": [
+    {
+      "id": "300",
+      "case_mm": [
+        80,
+        20,
+        11
+      ],
+      "board_mm": [
+        17,
+        24,
+        1
+      ],
+      "non_cell_length_mm": 29,
+      "previous_non_cell_length_mm": 50,
+      "cell_side_gap_each_mm": 3.05,
+      "cell_face_gap_each_mm": 0.95,
+      "front_case_gap_mm": 0.1,
+      "rear_case_gap_mm": 0.45,
+      "reservation_count": 24,
+      "same_face_overlaps": 0,
+      "note": "Zero overlap means reservation boxes fit. It does not validate actual footprints, routing, assembly tolerances, insulation or temperature.",
+      "valid_single_solids": 30,
+      "solid_intersections": 0
+    },
+    {
+      "id": "530",
+      "case_mm": [
+        88,
+        23.5,
+        12
+      ],
+      "board_mm": [
+        20,
+        24,
+        1
+      ],
+      "non_cell_length_mm": 29,
+      "previous_non_cell_length_mm": 50,
+      "cell_side_gap_each_mm": 1.8,
+      "cell_face_gap_each_mm": 1.55,
+      "front_case_gap_mm": 0.6,
+      "rear_case_gap_mm": 0.95,
+      "reservation_count": 24,
+      "same_face_overlaps": 0,
+      "note": "Zero overlap means reservation boxes fit. It does not validate actual footprints, routing, assembly tolerances, insulation or temperature.",
+      "valid_single_solids": 30,
+      "solid_intersections": 0
+    },
+    {
+      "id": "850",
+      "case_mm": [
+        99,
+        24,
+        12
+      ],
+      "board_mm": [
+        20,
+        28,
+        1
+      ],
+      "non_cell_length_mm": 33,
+      "previous_non_cell_length_mm": 50,
+      "cell_side_gap_each_mm": 1.8,
+      "cell_face_gap_each_mm": 0.95,
+      "front_case_gap_mm": 0.6,
+      "rear_case_gap_mm": 0.95,
+      "reservation_count": 30,
+      "same_face_overlaps": 0,
+      "note": "Zero overlap means reservation boxes fit. It does not validate actual footprints, routing, assembly tolerances, insulation or temperature.",
+      "valid_single_solids": 36,
+      "solid_intersections": 0
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+(footprint "Spark:J1_WirePad" (layer "F.Cu") 
+(property "Reference" "J1" (at 0.0000 -2.2000) (layer "F.Fab") (effects (font (size .65 .65) (thickness .1))))
+(property "Value" "VIN +" (at 0.0000 0.0000) (layer "F.Fab") hide (effects (font (size .6 .6) (thickness .1))))
+(attr through_hole)
+(fp_rect (start -1.5000 -1.5000) (end 1.5000 1.5000) (stroke (width .1) (type default)) (fill none) (layer "F.Fab"))
+(pad "1" thru_hole circle (at 0.0000 0.0000) (size 3.0000 3.0000) (drill 1.5) (layers "*.Cu" "*.Mask") )
+(fp_rect (start -1.6000 -1.6000) (end 1.6000 1.6000) (stroke (width .05) (type default)) (fill none) (layer "F.CrtYd"))
+)

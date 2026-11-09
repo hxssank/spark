@@ -1,0 +1,385 @@
+{
+  "coordinates": "KiCad board XY in millimetres; origin at top-left board corner",
+  "board_mm": [
+    20,
+    38,
+    1
+  ],
+  "components": [
+    {
+      "reference": "U1",
+      "value": "TPS61288LRQQR",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        8.45,
+        14.7,
+        11.55,
+        17.3
+      ],
+      "body_xy_basis": "manufacturer maximum",
+      "maximum_body_height_mm": 1.0,
+      "height_basis": "manufacturer maximum; add solder allowance",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "L1",
+      "value": "2.2uH XAL1060-222MEC",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        4.1,
+        18.75,
+        15.9,
+        29.25
+      ],
+      "body_xy_basis": "manufacturer maximum",
+      "maximum_body_height_mm": 6.0,
+      "height_basis": "manufacturer maximum; add solder allowance",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "C1",
+      "value": "22uF 25V X7R 1210",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        1.85,
+        30.65,
+        4.550000000000001,
+        34.15
+      ],
+      "body_xy_basis": "manufacturer maximum",
+      "maximum_body_height_mm": 2.7,
+      "height_basis": "manufacturer maximum; add solder allowance",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "C2",
+      "value": "100nF 25V X7R 0402",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        14.75,
+        13.0,
+        15.25,
+        14.0
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "C3",
+      "value": "4.7uF 10V X5R 0603",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        6.4750000000000005,
+        12.9,
+        8.075000000000001,
+        13.700000000000001
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "C4",
+      "value": "100nF 25V X7R 0402",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        11.2,
+        13.05,
+        12.2,
+        13.55
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "C5",
+      "value": "22uF 25V X7R 1210",
+      "side": "back",
+      "body_bounds_board_xy_mm": [
+        3.15,
+        6.25,
+        5.85,
+        9.75
+      ],
+      "body_xy_basis": "manufacturer maximum",
+      "maximum_body_height_mm": 2.7,
+      "height_basis": "manufacturer maximum; add solder allowance",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "C6",
+      "value": "22uF 25V X7R 1210",
+      "side": "back",
+      "body_bounds_board_xy_mm": [
+        8.15,
+        6.25,
+        10.85,
+        9.75
+      ],
+      "body_xy_basis": "manufacturer maximum",
+      "maximum_body_height_mm": 2.7,
+      "height_basis": "manufacturer maximum; add solder allowance",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "C7",
+      "value": "22uF 25V X7R 1210",
+      "side": "back",
+      "body_bounds_board_xy_mm": [
+        13.15,
+        6.25,
+        15.85,
+        9.75
+      ],
+      "body_xy_basis": "manufacturer maximum",
+      "maximum_body_height_mm": 2.7,
+      "height_basis": "manufacturer maximum; add solder allowance",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "C8",
+      "value": "22uF 25V X7R 1210",
+      "side": "back",
+      "body_bounds_board_xy_mm": [
+        3.15,
+        10.75,
+        5.85,
+        14.25
+      ],
+      "body_xy_basis": "manufacturer maximum",
+      "maximum_body_height_mm": 2.7,
+      "height_basis": "manufacturer maximum; add solder allowance",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "C9",
+      "value": "22uF 25V X7R 1210",
+      "side": "back",
+      "body_bounds_board_xy_mm": [
+        8.15,
+        10.75,
+        10.85,
+        14.25
+      ],
+      "body_xy_basis": "manufacturer maximum",
+      "maximum_body_height_mm": 2.7,
+      "height_basis": "manufacturer maximum; add solder allowance",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "C10",
+      "value": "22uF 25V X7R 1210",
+      "side": "back",
+      "body_bounds_board_xy_mm": [
+        13.15,
+        10.75,
+        15.85,
+        14.25
+      ],
+      "body_xy_basis": "manufacturer maximum",
+      "maximum_body_height_mm": 2.7,
+      "height_basis": "manufacturer maximum; add solder allowance",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "R1",
+      "value": "110k 0.1% 0402",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        3.5,
+        10.75,
+        4.5,
+        11.25
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "R2",
+      "value": "15k 0.1% 0402",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        4.5,
+        14.875,
+        5.5,
+        15.375
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "R3",
+      "value": "16.5k 0.1% 0402",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        4.5,
+        16.75,
+        5.5,
+        17.25
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "JP1",
+      "value": "9V SELECT NORMALLY OPEN",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        1.4499999999999997,
+        16.6,
+        3.15,
+        17.4
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": true
+    },
+    {
+      "reference": "R4",
+      "value": "12.4k 1% 0402",
+      "side": "back",
+      "body_bounds_board_xy_mm": [
+        5.0,
+        19.75,
+        6.0,
+        20.25
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "C11",
+      "value": "8.2nF C0G 0402",
+      "side": "back",
+      "body_bounds_board_xy_mm": [
+        2.0,
+        21.75,
+        3.0,
+        22.25
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "C12",
+      "value": "10pF C0G 0402",
+      "side": "back",
+      "body_bounds_board_xy_mm": [
+        7.0,
+        21.75,
+        8.0,
+        22.25
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "R5",
+      "value": "100k 0402",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        17.0,
+        23.75,
+        18.0,
+        24.25
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": false
+    },
+    {
+      "reference": "J1",
+      "value": "VIN +",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        3.5,
+        1.5,
+        6.5,
+        4.5
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": true
+    },
+    {
+      "reference": "J2",
+      "value": "VIN GND",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        13.5,
+        1.5,
+        16.5,
+        4.5
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": true
+    },
+    {
+      "reference": "J3",
+      "value": "VOUT +",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        11.5,
+        33.5,
+        14.5,
+        36.5
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": true
+    },
+    {
+      "reference": "J4",
+      "value": "VOUT GND",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        15.5,
+        33.5,
+        18.5,
+        36.5
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": true
+    },
+    {
+      "reference": "J5",
+      "value": "ENABLE 1.2-4.2V",
+      "side": "front",
+      "body_bounds_board_xy_mm": [
+        16.25,
+        18.25,
+        17.75,
+        19.75
+      ],
+      "body_xy_basis": "nominal reference; exact part not qualified",
+      "maximum_body_height_mm": null,
+      "height_basis": "unverified",
+      "is_pcb_feature": true
+    }
+  ]
+}

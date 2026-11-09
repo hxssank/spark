@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "filename": "spark_boost_rev_a.kicad_pro",
+    "version": 1
+  },
+  "board": {
+    "design_settings": {
+      "rules": {
+        "min_clearance": 0.15,
+        "min_track_width": 0.15,
+        "min_via_diameter": 0.4,
+        "min_through_hole_diameter": 0.2,
+        "min_hole_clearance": 0.15,
+        "min_hole_to_hole": 0.2,
+        "min_text_height": 0.8,
+        "min_text_thickness": 0.08
+      },
+      "rule_severities": {
+        "missing_courtyard": "error",
+        "malformed_courtyard": "error",
+        "courtyards_overlap": "error",
+        "footprint_type_mismatch": "error",
+        "footprint_filters_mismatch": "error",
+        "track_not_centered_on_via": "error",
+        "tuning_profile_track_geometries": "error"
+      }
+    }
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "name": "Default",
+        "clearance": 0.15,
+        "track_width": 0.2,
+        "via_diameter": 0.5,
+        "via_drill": 0.25,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "bus_width": 12,
+        "wire_width": 6,
+        "schematic_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "pcb_color": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "line_style": 0
+      }
+    ],
+    "meta": {
+      "version": 4
+    }
+  }
+}

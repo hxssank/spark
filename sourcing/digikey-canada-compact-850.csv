@@ -1,0 +1,26 @@
+Function,Manufacturer part number,Provisional quantity per device,Optional sample quantity including spares,DigiKey Canada URL,Observed CAD unit price at qty 1,Availability checked 2026-10-30,Design dependency
+Main boost,TPS61288LRQQR,1,2,https://www.digikey.ca/en/products/detail/texas-instruments/TPS61288LRQQR/15856656,3.31,Listed in stock,25 W target requires low-cell current and thermal tests
+Thin boost inductor,XGL7030-222MEC,1,2,,,DigiKey listing not confirmed,8 x 8 x 3.1 mm maximum; saturation and fault-current review required; do not use bench XAL1060 footprint
+Onboard charger,BQ25628RYKR,1,2,https://www.digikey.ca/en/products/detail/texas-instruments/BQ25628RYKR/17394931,6.76,Listed in stock,Separate charger inductor and passives required; main boost must bypass limited SYS path
+PD and display MCU,STM32G071GBU6N,1,2,https://www.digikey.ca/en/products/detail/stmicroelectronics/STM32G071GBU6N/9817787,5.34,Out of stock,Retain N pinout with both CC connections; firmware and logic rail required
+Dual-role USB-C protection and gate driver,TCPP03-M20,1,2,https://www.digikey.ca/en/products/detail/stmicroelectronics/TCPP03-M20/15295956,3.31,Listed in stock,External VBUS FETs and shunt required; not a standalone PD controller
+Fuel gauge and protection controller,MAX17311X+T,1,,https://www.digikey.ca/en/products/detail/analog-devices-inc-maxim-integrated/MAX17311X-T/11483751,,US listing showed 2500-piece MOQ; Canada small-quantity availability unverified,Do not order reel; MAX17311X+ alternative packaging listing 10244400 also needs availability check; external FETs shunt and NTC required
+Battery disconnect dual MOSFET,"SSM10N954L,EFF",1,2,https://www.digikey.ca/en/products/detail/toshiba-semiconductor-and-storage/SSM10N954L-EFF/15857805,,US listing found; Canada availability unverified,Gate drive compatibility; hot resistance; interruption and assembly review required
+Bulk capacitor candidate,C2012X5R1E226M125AC,TBD,20,https://www.digikey.ca/en/products/detail/tdk/C2012X5R1E226M125AC/3661660,,Conflicting indexed stock; newer pages show out of stock,22 uF 25 V X5R 0805; 2 input and 8 output sites in layout; output must retain at least 60 uF effective at 9 V; sample quantity is not approved population
+Alternative bulk capacitor,GRM21BR61E226ME44L,Alternative to TDK,20,https://www.digikey.ca/en/products/detail/murata-electronics/GRM21BR61E226ME44L/4905535,,Out of stock,Choose one capacitor family after bias and ripple review; do not add both sample quantities by default
+USB-C receptacle,USB4500-03-0-A,1,,,,DigiKey listing not confirmed,Board cutout and 1 mm PCB compatibility unresolved
+Conditional OLED boost,TPS61046YFFR,0 or 1,,https://www.digikey.ca/en/products/detail/texas-instruments/TPS61046YFFR/6110610,,Listing found; indexed out of stock,Only if exact panel rail specification requires it; inductor and capacitors unresolved
+Battery,GNB8501S60WHV,1,,,,No DigiKey source confirmed,Existing 850 mAh LiHV candidate; exact pack drawing and current/thermal qualification required
+Colour OLED,RB060-6464TDDBG01,1,,,,No DigiKey source confirmed,Exact electrical specification and flex drawing required
+Charger inductor and capacitors,TBD,TBD,,,,Not selected,Choose from final BQ25628 circuit; four charger capacitor sites are reservations
+VBUS and charger-path isolation MOSFETs,TBD,TBD,,,,Not selected,Source/sink and charger-path FETs; independent reverse-current and fault shutdown
+Battery and VBUS current shunts,TBD,TBD,,,,Not selected,Select resistance power rating and Kelvin routing with controllers
+Cell and board temperature sensors,TBD,TBD,,,,Not selected,Select NTC curves and cutoff circuit
+Logic regulator and bypass,TBD,TBD,,,,Not selected,Select voltage current and quiescent draw after MCU pin and rail design
+Boost compensation and feedback passives,TBD,TBD,,,,Not selected,Recalculate for compact inductor and actual capacitor bank; bench values not approved
+Local decoupling and control passives,TBD,TBD,,,,Not selected,Values and quantities depend on completed schematic
+OLED flex connector and supply passives,TBD,TBD,,,,Not selected,Match panel pinout tail orientation and rail sequencing
+Wake switch,TBD,TBD,,,,Not selected,Select actuator and enclosure fit
+Cell termination and insulation,TBD,TBD,,,,Not selected,Low-profile service-cell connection; stock A30 not fitted in compact reservation
+PCB and assembly,TBD,TBD,,,,Not selected,20 x 28 x 1 mm six-layer double-sided reservation; no routed compact board
+Enclosure lens and fasteners,TBD,TBD,,,,Not selected,99 x 24 x 12 mm study; final retention and tolerances unresolved

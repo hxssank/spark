@@ -1,0 +1,307 @@
+{
+  "date": "2026-10-30",
+  "revision": "A",
+  "status": "Fit prototype with OLED reservation and bench boost converter; complete phone power bank not implemented",
+  "enclosure_mm": [
+    116,
+    24,
+    14.8
+  ],
+  "cell_candidate": "GNB8501S60WHV",
+  "pcb_mm": [
+    20,
+    38,
+    1
+  ],
+  "pcb_scope": "Routed four-layer 5V/9V boost converter for a laboratory supply and electronic load",
+  "target_power_w": 25,
+  "measured_power_w": null,
+  "validation": {
+    "mechanical_pytest_passed": 51,
+    "schematic_netlist_pytest_passed": 4,
+    "kicad_version": "10.0.7",
+    "erc_violations": 0,
+    "drc_violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity_issues": 0,
+    "ruff": "passed",
+    "viewer": "Browser verified studio and desk settings, Graphite and Titanium finishes, display close-up and explicit demo, open case, and size comparison",
+    "file_protocol_viewer_test": "blocked by browser URL policy",
+    "print_meshes": "4 regenerated connected, watertight meshes with nonzero-area triangles, consistent winding, positive volume and build-plane orientation",
+    "board_generation_pytest_passed": 7,
+    "package_pytest_passed": 49,
+    "viewer_node_tests_passed": 83,
+    "total_automated_tests_passed": 270,
+    "geometry": "38 valid single solids; no pairwise intersections; complete assembly fits enclosure and full sleeve withdrawal clears retained parts",
+    "viewer_idle_rendering": "Starts paused; OLED redraws only when demo state changes; camera and scene motion require explicit resume",
+    "service_path": "Continuous sleeve sweep checked against retained parts; cell removal and real display flex still require physical assembly tests",
+    "package": "Source/output SHA256 reports bind CAD, electronics, renders and preview. Packaging requires current test and lint results bound to every packaged file, and rejects missing outputs, inconsistent product dimensions, broken links and changed ZIP payloads.",
+    "electronics_build_pytest_passed": 11,
+    "drc_ignored_checks": [],
+    "npm_audit": "0 vulnerabilities including development dependencies",
+    "physical_hardware_tests_run": 0,
+    "performance_preview": "Browser verified nested coloured case silhouettes with shared centres, baseline and scale, battery overlays, compact cards, 10-60 W table, discharge-label screening, voltage cutoff, and expanded form-factor explanation. Desktop and 390px layouts checked without document overflow. Prior home calculator and zero-resistance checks remain recorded; no physical hardware measurements.",
+    "render_pipeline_pytest_passed": 12,
+    "renders": "3 Blender views regenerated; six PNG/BLEND outputs bound to CAD meshes and render sources by SHA256; saved scenes use relative output paths",
+    "asset_publication_pytest_passed": 5,
+    "circuit_checks_pytest_passed": 20,
+    "verification_runner_pytest_passed": 18,
+    "python_pytest_passed": 187,
+    "automated_tests_skipped": 0,
+    "compact_review": "Compact layout and size comparison reviewed in browser; automated checks do not qualify the circuit or CAD for manufacturing.",
+    "compact_geometry_pytest_passed": 10
+  },
+  "not_implemented": [
+    "USB-C PD negotiation",
+    "USB-C electrical connector",
+    "charging",
+    "cell protection",
+    "cell and board temperature cutoff",
+    "output isolation",
+    "OLED driver and supply",
+    "fuel gauge and battery identity",
+    "display firmware and physical wake control"
+  ],
+  "unverified": [
+    "25W operation",
+    "loop stability",
+    "physical assembly and print fit",
+    "final connector dimensions",
+    "battery thermal behavior and charged-storage life",
+    "AliExpress sellers, stock, shipping and checkout prices",
+    "OLED vendor drawing, FPC route, retention and supply requirements",
+    "passive component heights and placement tolerance",
+    "battery-health calibration and cell-swap behavior"
+  ],
+  "start_here": "review/comparison.html",
+  "parts_plan": "sourcing/parts-plan.md",
+  "pcb": "electronics/boost-prototype/spark_boost_rev_a.kicad_pcb",
+  "assembly": "mechanical/exports/spark_assembly.step",
+  "print_parts": "mechanical/print_parts",
+  "display": {
+    "candidate": "RB060-6464TDDBG01",
+    "technology": "colour OLED; AMOLED not established",
+    "glass_mm": [
+      15,
+      17.5,
+      1.2
+    ],
+    "active_area_mm": [
+      10.73,
+      10.73
+    ],
+    "resolution_px": [
+      64,
+      64
+    ],
+    "location": "rear electronics bay, within existing enclosure",
+    "source": "https://www.ronboe.com/shop/rb060-6464tddbg01/",
+    "status": "CAD reservation and simulated interface; not electrically implemented",
+    "fuel_gauge_candidate": "MAX17260",
+    "health_rule": "unknown until an identified cell has valid learned capacity and a matching measured baseline",
+    "cover_glass": "Flush with sleeve exterior; panel remains beneath the lens",
+    "exterior_appearance": "Colour-matched transmissive-cover finish study; only lit pixels are visible across the true 10.73 x 10.73 mm active area. The 17.2 x 19.7 mm sleeve recess is concealed in assembled views. Open case retains the physical 16.8 x 19.3 mm lens; optical transmission and coating are unqualified",
+    "preview": "64 x 64 warm-white numerals and thin charge bar; no telemetry by default; explicit example displays DEMO"
+  },
+  "scale_reference": {
+    "type": "simplified JUUL2 form reference",
+    "approximate_mm": [
+      97,
+      16,
+      7
+    ],
+    "not_a_measured_replica": true,
+    "source": "https://www.linkedin.com/pulse/juul2s-pods-refilling-hack-roberto-a-foglietta-0ef0e",
+    "scope": "An owner reports dimensions with a pod. Measurement method is not stated; retailer dimensions conflict."
+  },
+  "package_commands": {
+    "check": "python3 scripts/package_prototype.py --check",
+    "write": "python3 scripts/package_prototype.py --write",
+    "verify": "python3 scripts/verify_project.py --package"
+  },
+  "parts_page": "review/parts.html",
+  "viewing_reference": {
+    "hand_length_mm": 188,
+    "hand_scope": "Illustrative articulated adult hand with 15 finger joints; 1.6-second closing animation, replay and 21 sampled skin-clearance checks; not a physical grip test",
+    "views": [
+      "overview",
+      "size comparison",
+      "in hand",
+      "open case",
+      "screen"
+    ],
+    "rotation": "Starts paused; unrestricted 360-degree orbit with drag, wheel and keyboard; explicit automatic rotation and reduced-motion support",
+    "internal_details": "Visual PCB traces, component ends, pouch seams, fasteners and illustrative wiring; manufacturing CAD unchanged",
+    "environment": "Default shadow-only studio; optional local procedural desk, lamp, fireplace and bookcase"
+  },
+  "parts_page_interactions": [
+    "six-step case removal",
+    "bench, phone-output and recharge diagrams",
+    "length-allocation selector"
+  ],
+  "space_review": {
+    "envelope_change_mm": [
+      0,
+      0,
+      0
+    ],
+    "rounded_case_volume_cm3": 40.184,
+    "modeled_solids_and_reservations_cm3": 27.527,
+    "unallocated_volume_cm3": 12.657,
+    "minimum_listed_gap_mm": 0.25,
+    "decision": "Preserve enclosure dimensions and clearances until exact connectors, complete circuits, tolerances and thermal behavior are qualified"
+  },
+  "iphone_18_pro": {
+    "spark_output_target": "25 W at 9 V and 2.78 A; USB-C PD not implemented",
+    "phone_battery_basis_wh": 16.76,
+    "phone_battery_basis": "iFixit first-hand eSIM model teardown, verified 2026-10-29",
+    "phone_gain_measured": null,
+    "apple_fast_charge_reference": "Up to 50% in around 15 minutes with a 60 W-capable AVS adapter; not a Spark performance claim",
+    "sources": [
+      "https://www.apple.com/ca/iphone-18-pro/specs/",
+      "https://www.ifixit.com/News/119329/inside-the-tiny-unfixable-eye-iphone-18-pro-and-pro-max-teardown"
+    ]
+  },
+  "exterior_refinement": {
+    "sleeve_z": [
+      3.0,
+      115.0
+    ],
+    "top_band_height_mm": 1.0,
+    "end_edge_chamfer_mm": 0.45,
+    "finishes": [
+      "Graphite",
+      "Titanium with dark display window"
+    ],
+    "finish_status": "Visual studies; printed insulating parts remain the fit prototype",
+    "envelope_change_mm": [
+      0,
+      0,
+      0
+    ]
+  },
+  "comparison_page": "review/comparison.html",
+  "preview_performance": {
+    "versions_mah": [
+      300,
+      530,
+      850
+    ],
+    "evaluation_targets_w": [
+      10,
+      15,
+      25
+    ],
+    "usable_cell_energy_scenarios": [
+      0.65,
+      0.8,
+      0.9
+    ],
+    "boost_efficiency_assumption": 0.9,
+    "phone_charging_efficiency_assumption": 0.85,
+    "phone_battery_wh": 16.76,
+    "smaller_enclosures": "All three comparison versions are compact placement studies, with separate reservation CAD. The original Prototype A enclosure remains 116 x 24 x 14.8 mm.",
+    "performance_status": "Representative-voltage analytical scenarios with fixed boost efficiency and cell/wiring resistance loss; no measured charging performance or temperature prediction",
+    "wattage_comparison_w": [
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60
+    ],
+    "higher_power_status": "30-60 W is a same-cell analytical study beyond the current 25 W design target. Higher-power electronics and case fit are not designed. Gain and time are hidden when current at 3.2 V exceeds the cell manufacturer C label; passing this screen does not validate operation.",
+    "representative_open_circuit_voltage_v": 3.8,
+    "loaded_cell_cutoff_v": 3.2,
+    "assumed_resistance_milliohms": 20,
+    "resistance_options_milliohms": [
+      0,
+      10,
+      20,
+      40,
+      80
+    ],
+    "resistance_basis": "Same user-adjustable cell and wiring resistance assumption for each size; not measured cell data",
+    "listed_cell_discharge_c_rates": [
+      60,
+      90,
+      60
+    ]
+  },
+  "verification_report": "scripts/verification-report.json",
+  "compact_design": {
+    "status": "Component reservation and package study; not a routed PCB or manufacturing release",
+    "layout": "electronics/compact-design/layout.json",
+    "review": "review/parts.html#compact-design",
+    "cad_directory": "mechanical/compact-exports",
+    "copper_layers_target": 6,
+    "board_faces_populated": 2,
+    "architecture": "Shared charger and boost for 300/530; separate boost and charger for 850; shared display and USB-PD MCU; combined cell gauge and protector",
+    "capacitors": "Parallel 0805 bulk-capacitor candidates; population requires effective capacitance and ripple checks. Series strings are not assumed to save space.",
+    "remaining_work": [
+      "complete schematic and PCB routing",
+      "manufacturer land patterns and courtyards",
+      "DC-biased capacitance and loop stability",
+      "custom cell-contact and OLED flex drawings",
+      "case retention, USB load support and assembly tolerance",
+      "cell and board temperature, fault cutoff and phone-output tests"
+    ],
+    "physical_hardware_tests_run": 0,
+    "original_prototype": "Original Prototype A CAD and bench PCB remain in mechanical/exports and electronics/boost-prototype",
+    "versions": [
+      {
+        "id": "300",
+        "case_mm": [
+          80,
+          20,
+          11
+        ],
+        "pcb_mm": [
+          17,
+          24,
+          1
+        ],
+        "non_cell_length_mm": 29,
+        "previous_non_cell_length_mm": 50
+      },
+      {
+        "id": "530",
+        "case_mm": [
+          88,
+          23.5,
+          12
+        ],
+        "pcb_mm": [
+          20,
+          24,
+          1
+        ],
+        "non_cell_length_mm": 29,
+        "previous_non_cell_length_mm": 50
+      },
+      {
+        "id": "850",
+        "case_mm": [
+          99,
+          24,
+          12
+        ],
+        "pcb_mm": [
+          20,
+          28,
+          1
+        ],
+        "non_cell_length_mm": 33,
+        "previous_non_cell_length_mm": 50
+      }
+    ],
+    "cell_connection": "Service-cell assembly with proposed low-profile contacts or dressed leads. The stock A30 connector and a protected removable cartridge are not fitted.",
+    "geometry_report": "mechanical/compact-exports/geometry-report.json",
+    "cell_dimension_status": "Manufacturer-listed pack dimensions. Whether the 530 mAh plastic head and other connectors are included requires a controlled drawing or physical sample."
+  }
+}

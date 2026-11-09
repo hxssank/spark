@@ -1,0 +1,316 @@
+{
+  "title": "Spark boost prototype Rev A",
+  "status": "Engineering prototype. Bench supply and electronic load only. No USB PD, cell protection, charger or cell temperature cutoff.",
+  "input_range_v": [
+    3.0,
+    4.2
+  ],
+  "target_output": {
+    "default_v": 5,
+    "jumper_closed_v": 9,
+    "power_target_w": 25,
+    "stress_test_a": 3
+  },
+  "components": [
+    {
+      "ref": "U1",
+      "value": "TPS61288LRQQR",
+      "kind": "ic",
+      "pins": {
+        "1": "FB",
+        "2": "COMP",
+        "3": "GND",
+        "4": "SW",
+        "5": "VOUT",
+        "6": "EN",
+        "7": "VIN",
+        "8": "BST",
+        "9": "SW",
+        "10": "GND",
+        "11": "VCC"
+      },
+      "footprint": "Spark:U1_TPS61288_RQQ0011A",
+      "mpn": "TPS61288LRQQR",
+      "manufacturer": "Texas Instruments",
+      "source": "https://www.ti.com/lit/ds/symlink/tps61288.pdf",
+      "qualification": "Manufacturer part and pin map verified"
+    },
+    {
+      "ref": "L1",
+      "value": "2.2uH XAL1060-222MEC",
+      "kind": "inductor",
+      "pins": {
+        "1": "VIN",
+        "2": "SW"
+      },
+      "footprint": "Spark:L1_Coilcraft_XAL1060",
+      "mpn": "XAL1060-222MEC",
+      "manufacturer": "Coilcraft",
+      "source": "https://www.coilcraft.com/getmedia/8909f858-b441-4d60-acff-8b8ca36f9ede/xal1060.pdf",
+      "qualification": "Manufacturer value, dimensions and land pattern verified"
+    },
+    {
+      "ref": "C1",
+      "value": "22uF 25V X7R 1210",
+      "kind": "capacitor",
+      "pins": {
+        "1": "VIN",
+        "2": "GND"
+      },
+      "footprint": "Spark:C1_C_1210",
+      "mpn": "GRM32ER71E226KE15L",
+      "manufacturer": "Murata",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71E226KE15-04CA.pdf",
+      "qualification": "Datasheet dimensions verified; effective capacitance and sourcing unverified"
+    },
+    {
+      "ref": "C2",
+      "value": "100nF 25V X7R 0402",
+      "kind": "capacitor",
+      "pins": {
+        "1": "VIN",
+        "2": "GND"
+      },
+      "footprint": "Spark:C2_C_0402"
+    },
+    {
+      "ref": "C3",
+      "value": "4.7uF 10V X5R 0603",
+      "kind": "capacitor",
+      "pins": {
+        "1": "VCC",
+        "2": "GND"
+      },
+      "footprint": "Spark:C3_C_0603",
+      "mpn": "0603ZD475KAT2A",
+      "manufacturer": "KYOCERA AVX",
+      "source": "https://www.ti.com/lit/pdf/SLVUBW6",
+      "qualification": "TI EVM VCC capacitor part; effective capacitance must be confirmed"
+    },
+    {
+      "ref": "C4",
+      "value": "100nF 25V X7R 0402",
+      "kind": "capacitor",
+      "pins": {
+        "1": "BST",
+        "2": "SW"
+      },
+      "footprint": "Spark:C4_C_0402"
+    },
+    {
+      "ref": "C5",
+      "value": "22uF 25V X7R 1210",
+      "kind": "capacitor",
+      "pins": {
+        "1": "VOUT",
+        "2": "GND"
+      },
+      "footprint": "Spark:C5_C_1210",
+      "mpn": "GRM32ER71E226KE15L",
+      "manufacturer": "Murata",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71E226KE15-04CA.pdf",
+      "qualification": "Datasheet dimensions verified; effective capacitance and sourcing unverified"
+    },
+    {
+      "ref": "C6",
+      "value": "22uF 25V X7R 1210",
+      "kind": "capacitor",
+      "pins": {
+        "1": "VOUT",
+        "2": "GND"
+      },
+      "footprint": "Spark:C6_C_1210",
+      "mpn": "GRM32ER71E226KE15L",
+      "manufacturer": "Murata",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71E226KE15-04CA.pdf",
+      "qualification": "Datasheet dimensions verified; effective capacitance and sourcing unverified"
+    },
+    {
+      "ref": "C7",
+      "value": "22uF 25V X7R 1210",
+      "kind": "capacitor",
+      "pins": {
+        "1": "VOUT",
+        "2": "GND"
+      },
+      "footprint": "Spark:C7_C_1210",
+      "mpn": "GRM32ER71E226KE15L",
+      "manufacturer": "Murata",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71E226KE15-04CA.pdf",
+      "qualification": "Datasheet dimensions verified; effective capacitance and sourcing unverified"
+    },
+    {
+      "ref": "C8",
+      "value": "22uF 25V X7R 1210",
+      "kind": "capacitor",
+      "pins": {
+        "1": "VOUT",
+        "2": "GND"
+      },
+      "footprint": "Spark:C8_C_1210",
+      "mpn": "GRM32ER71E226KE15L",
+      "manufacturer": "Murata",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71E226KE15-04CA.pdf",
+      "qualification": "Datasheet dimensions verified; effective capacitance and sourcing unverified"
+    },
+    {
+      "ref": "C9",
+      "value": "22uF 25V X7R 1210",
+      "kind": "capacitor",
+      "pins": {
+        "1": "VOUT",
+        "2": "GND"
+      },
+      "footprint": "Spark:C9_C_1210",
+      "mpn": "GRM32ER71E226KE15L",
+      "manufacturer": "Murata",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71E226KE15-04CA.pdf",
+      "qualification": "Datasheet dimensions verified; effective capacitance and sourcing unverified"
+    },
+    {
+      "ref": "C10",
+      "value": "22uF 25V X7R 1210",
+      "kind": "capacitor",
+      "pins": {
+        "1": "VOUT",
+        "2": "GND"
+      },
+      "footprint": "Spark:C10_C_1210",
+      "mpn": "GRM32ER71E226KE15L",
+      "manufacturer": "Murata",
+      "source": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM32ER71E226KE15-04CA.pdf",
+      "qualification": "Datasheet dimensions verified; effective capacitance and sourcing unverified"
+    },
+    {
+      "ref": "R1",
+      "value": "110k 0.1% 0402",
+      "kind": "resistor",
+      "pins": {
+        "1": "VOUT",
+        "2": "FB"
+      },
+      "footprint": "Spark:R1_R_0402"
+    },
+    {
+      "ref": "R2",
+      "value": "15k 0.1% 0402",
+      "kind": "resistor",
+      "pins": {
+        "1": "FB",
+        "2": "GND"
+      },
+      "footprint": "Spark:R2_R_0402"
+    },
+    {
+      "ref": "R3",
+      "value": "16.5k 0.1% 0402",
+      "kind": "resistor",
+      "pins": {
+        "1": "FB",
+        "2": "SEL9"
+      },
+      "footprint": "Spark:R3_R_0402"
+    },
+    {
+      "ref": "JP1",
+      "value": "9V SELECT NORMALLY OPEN",
+      "kind": "jumper",
+      "pins": {
+        "1": "SEL9",
+        "2": "GND"
+      },
+      "footprint": "Spark:JP1_J_SolderJumper_OPEN"
+    },
+    {
+      "ref": "R4",
+      "value": "12.4k 1% 0402",
+      "kind": "resistor",
+      "pins": {
+        "1": "COMP",
+        "2": "COMP_Z"
+      },
+      "footprint": "Spark:R4_R_0402"
+    },
+    {
+      "ref": "C11",
+      "value": "8.2nF C0G 0402",
+      "kind": "capacitor",
+      "pins": {
+        "1": "COMP_Z",
+        "2": "GND"
+      },
+      "footprint": "Spark:C11_C_0402"
+    },
+    {
+      "ref": "C12",
+      "value": "10pF C0G 0402",
+      "kind": "capacitor",
+      "pins": {
+        "1": "COMP",
+        "2": "GND"
+      },
+      "footprint": "Spark:C12_C_0402"
+    },
+    {
+      "ref": "R5",
+      "value": "100k 0402",
+      "kind": "resistor",
+      "pins": {
+        "1": "EN",
+        "2": "GND"
+      },
+      "footprint": "Spark:R5_R_0402"
+    },
+    {
+      "ref": "J1",
+      "value": "VIN +",
+      "kind": "testpoint",
+      "pins": {
+        "1": "VIN"
+      },
+      "footprint": "Spark:J1_WirePad"
+    },
+    {
+      "ref": "J2",
+      "value": "VIN GND",
+      "kind": "testpoint",
+      "pins": {
+        "1": "GND"
+      },
+      "footprint": "Spark:J2_WirePad"
+    },
+    {
+      "ref": "J3",
+      "value": "VOUT +",
+      "kind": "testpoint",
+      "pins": {
+        "1": "VOUT"
+      },
+      "footprint": "Spark:J3_WirePad"
+    },
+    {
+      "ref": "J4",
+      "value": "VOUT GND",
+      "kind": "testpoint",
+      "pins": {
+        "1": "GND"
+      },
+      "footprint": "Spark:J4_WirePad"
+    },
+    {
+      "ref": "J5",
+      "value": "ENABLE 1.2-4.2V",
+      "kind": "testpoint",
+      "pins": {
+        "1": "EN"
+      },
+      "footprint": "Spark:J5_WirePad"
+    }
+  ],
+  "calculation_assumptions": {
+    "efficiency_nominal": 0.9,
+    "efficiency_low": 0.85,
+    "inductance_tolerance_fraction": 0.3,
+    "effective_output_capacitance_f": 6e-05
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "sleeve.stl": {
+    "watertight": true,
+    "winding_consistent": true,
+    "connected": true,
+    "volume_mm3": 8814.459,
+    "min_z_mm": 0.0,
+    "triangles": 932
+  },
+  "carrier.stl": {
+    "watertight": true,
+    "winding_consistent": true,
+    "connected": true,
+    "volume_mm3": 4624.103,
+    "min_z_mm": 0.0,
+    "triangles": 3212
+  },
+  "front_cover.stl": {
+    "watertight": true,
+    "winding_consistent": true,
+    "connected": true,
+    "volume_mm3": 1117.96,
+    "min_z_mm": 0.0,
+    "triangles": 60
+  },
+  "bottom_cap.stl": {
+    "watertight": true,
+    "winding_consistent": true,
+    "connected": true,
+    "volume_mm3": 964.397,
+    "min_z_mm": 0.0,
+    "triangles": 2460
+  }
+}

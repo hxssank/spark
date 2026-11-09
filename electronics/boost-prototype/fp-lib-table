@@ -1,0 +1,1 @@
+(fp_lib_table (lib (name "Spark")(type "KiCad")(uri "${KIPRJMOD}/Spark.pretty")(options "")(descr "Spark prototype footprints")))

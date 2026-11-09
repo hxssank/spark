@@ -1,0 +1,52 @@
+{
+  "release": "engineering review only",
+  "electrical_design": "5V/9V boost bench prototype",
+  "board_mm": [
+    20,
+    38,
+    1
+  ],
+  "copper_layers": 4,
+  "copper_oz": [
+    2,
+    1,
+    1,
+    2
+  ],
+  "limits": {
+    "clearance_mm": 0.15,
+    "track_mm": 0.15,
+    "via_drill_mm": 0.2,
+    "via_diameter_mm": 0.4
+  },
+  "not_implemented": [
+    "USB PD negotiation",
+    "USB connector",
+    "cell protection",
+    "charger",
+    "temperature cutoff",
+    "output disconnect"
+  ],
+  "unverified": [
+    "physical assembly",
+    "inductor and capacitor thermal behavior",
+    "loop stability",
+    "high current operation",
+    "solder stencil and via-in-pad process",
+    "cell or phone operation",
+    "fabricator approval of copper weights, dielectric stackup and finished thickness",
+    "surface finish selection"
+  ],
+  "erc_drc_are_not_hardware_tests": true,
+  "copper_thickness_mm": [
+    0.07,
+    0.035,
+    0.035,
+    0.07
+  ],
+  "proposed_dielectric_mm": [
+    0.14,
+    0.51,
+    0.14
+  ]
+}

@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "Spark") (type "KiCad") (uri "${KIPRJMOD}/Spark.kicad_sym") (options "") (descr "Spark prototype symbols")))

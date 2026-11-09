@@ -1,0 +1,298 @@
+{
+  "revision": "A-fit-prototype",
+  "units": "mm",
+  "coordinate_system": "x=width, y=thickness, z=length; base z=0; USB end z=116",
+  "dimensions": {
+    "length": 116.0,
+    "width": 24.0,
+    "thickness": 14.8,
+    "shell_wall": 1.2,
+    "shell_radius": 3.2,
+    "cell_width": 18.0,
+    "cell_thickness": 7.7,
+    "cell_length": 66.0,
+    "cell_z": 6.5,
+    "cell_pocket_width": 19.2,
+    "cell_pocket_thickness": 9.4,
+    "pcb_width": 20.0,
+    "pcb_length": 38.0,
+    "pcb_thickness": 1.0,
+    "pcb_z": 76.0,
+    "pcb_y": -1.7
+  },
+  "exterior": {
+    "sleeve_z": [
+      3.0,
+      115.0
+    ],
+    "top_band_height_mm": 1.0,
+    "end_edge_chamfer_mm": 0.45
+  },
+  "space_budget": {
+    "external_box_volume_mm3": 41203.2,
+    "rounded_case_volume_mm3": 40183.549,
+    "modeled_occupancy_mm3": 27526.634,
+    "unallocated_volume_mm3": 12656.915,
+    "longitudinal_bays": [
+      {
+        "label": "Base and screw clearance",
+        "start_z_mm": 0,
+        "end_z_mm": 6.5,
+        "length_mm": 6.5
+      },
+      {
+        "label": "Cell",
+        "start_z_mm": 6.5,
+        "end_z_mm": 72.5,
+        "length_mm": 66.0
+      },
+      {
+        "label": "Lead gap",
+        "start_z_mm": 72.5,
+        "end_z_mm": 76.0,
+        "length_mm": 3.5
+      },
+      {
+        "label": "Electronics bay",
+        "start_z_mm": 76.0,
+        "end_z_mm": 114.0,
+        "length_mm": 38.0
+      },
+      {
+        "label": "Port end",
+        "start_z_mm": 114.0,
+        "end_z_mm": 116.0,
+        "length_mm": 2.0
+      }
+    ],
+    "note": "Modeled occupancy includes solid parts and component reservations. Unallocated volume includes assembly clearances and space for circuits, connectors and wiring that are not designed. It is not a usable PCB volume or permission to reduce cell clearance."
+  },
+  "clearances": [
+    {
+      "key": "sleeve_carrier",
+      "label": "Sleeve to carrier",
+      "nominal_mm": 0.3,
+      "status": "Running clearance below the head flange; printer tolerance unverified"
+    },
+    {
+      "key": "cell_side",
+      "label": "Cell to side wall",
+      "nominal_mm": 0.6,
+      "status": "Nominal cell only; swelling allowance unverified"
+    },
+    {
+      "key": "cell_front",
+      "label": "Cell to front cover",
+      "nominal_mm": 0.7,
+      "status": "Nominal cell only; swelling allowance unverified"
+    },
+    {
+      "key": "cell_back",
+      "label": "Cell to rear wall",
+      "nominal_mm": 1.0,
+      "status": "Nominal cell only; swelling allowance unverified"
+    },
+    {
+      "key": "inductor_sleeve",
+      "label": "Inductor to sleeve",
+      "nominal_mm": 0.8,
+      "status": "Maximum body plus solder; assembly and print tolerances unverified"
+    },
+    {
+      "key": "rear_cap_carrier",
+      "label": "Rear capacitors to carrier",
+      "nominal_mm": 0.35,
+      "status": "Maximum body plus solder; assembly and print tolerances unverified"
+    },
+    {
+      "key": "display_cap",
+      "label": "OLED to rear capacitors",
+      "nominal_mm": 0.25,
+      "status": "Nominal panel position; PCB and panel placement tolerances unverified"
+    },
+    {
+      "key": "usb_output_pad",
+      "label": "USB shell to output pad",
+      "nominal_mm": 0.25,
+      "status": "Generic shell and bare pad only; solder joint, wire and connector feet are missing"
+    }
+  ],
+  "pcb": {
+    "width": 20.0,
+    "length": 38.0,
+    "thickness": 1.0,
+    "origin": [
+      -10.0,
+      -1.7,
+      76.0
+    ],
+    "top_component_max_y": 5.4,
+    "bottom_component_min_y": -4.5,
+    "sleeve_inner_y": [
+      -6.2,
+      6.2
+    ],
+    "carrier_rear_face_y": -4.85,
+    "head_internal_width_z108_to115": 19.8,
+    "usb_reserved_zone": {
+      "x": [
+        -4.5,
+        4.5
+      ],
+      "y": [
+        -0.4,
+        2.8
+      ],
+      "z": [
+        106.7,
+        115.5
+      ]
+    },
+    "component_model": "U1, L1 and 1210 envelopes use manufacturer maximum bodies plus 0.1 mm solder; other bodies use unverified 1.0 mm installed-height allowances",
+    "capacitor_1210_max_envelope": [
+      2.7,
+      2.8,
+      3.5
+    ],
+    "capacitor_dimensions_source": "https://www.murata.com/en-global/api/pdfdownloadapi?cate=luCeramicCapacitorsSMD&partno=GRM32ER71E226KE15%23",
+    "component_placement_source": "electronics/boost-prototype/component-placement.json",
+    "unselected_component_height_allowance": 1.0,
+    "unselected_component_height_status": "visual allowance only; exact parts and heights unverified",
+    "edge_seat_keepouts": [
+      {
+        "x_abs_min": 9.5,
+        "z_min": 78,
+        "z_max": 81
+      },
+      {
+        "x_abs_min": 9.5,
+        "z_min": 99,
+        "z_max": 102
+      }
+    ],
+    "status": "placement envelope; complete charger/PD/protection integration unverified"
+  },
+  "cell": {
+    "model": "GNB8501S60WHV",
+    "envelope": [
+      18.0,
+      7.7,
+      66.0
+    ],
+    "origin": [
+      -9.0,
+      -3.85,
+      6.5
+    ],
+    "minimum_radial_clearance_each_side": 0.6,
+    "back_clearance": 1.0,
+    "front_clearance": 0.7,
+    "lead_bay_z": [
+      72.5,
+      76.0
+    ],
+    "status": "nominal envelope; tabs, lead exit, swelling allowance need sample measurement"
+  },
+  "usb": {
+    "opening": [
+      10.4,
+      4.6
+    ],
+    "mouth_z": 115.5,
+    "recess": 0.5,
+    "center_y": 1.2,
+    "status": "generic receptacle envelope; match purchased connector drawing; solder joints, wires and connector feet are not modeled"
+  },
+  "a30_reference": {
+    "envelope": [
+      6.0,
+      6.0,
+      12.0
+    ],
+    "origin": [
+      -3.0,
+      -0.4,
+      75.1
+    ],
+    "status": "unmeasured generic envelope; not a supplier drawing or verified lead bend"
+  },
+  "display": {
+    "candidate": "RB060-6464TDDBG01",
+    "technology": "colour OLED",
+    "glass_envelope": [
+      15.0,
+      1.2,
+      17.5
+    ],
+    "glass_origin": [
+      -7.5,
+      -4.65,
+      90.5
+    ],
+    "active_area": [
+      10.73,
+      10.73
+    ],
+    "resolution_px": [
+      64,
+      64
+    ],
+    "active_area_position": "centred visual reference; drawing unverified",
+    "outward_normal": [
+      0,
+      -1,
+      0
+    ],
+    "lens_envelope": [
+      16.8,
+      0.5,
+      19.3
+    ],
+    "lens_origin": [
+      -8.4,
+      -7.4,
+      89.6
+    ],
+    "fpc_keepout_envelope": [
+      12.0,
+      1.5,
+      5.0
+    ],
+    "fpc_keepout_origin": [
+      -6.0,
+      -4.75,
+      108.0
+    ],
+    "source": "https://www.ronboe.com/shop/rb060-6464tddbg01/",
+    "status": "provisional fit; FPC drawing, connector, controller, retention and thermal isolation unverified",
+    "assembly": "panel stays on carrier; lens stays on sleeve during sleeve removal; remove lens to extract panel through rear opening",
+    "panel_retention": "edge adhesive in 0.2 mm side clearance; material and retention strength unverified",
+    "lens_retention": "0.1 mm bond allowance; adhesive and service method unverified"
+  },
+  "fasteners": {
+    "quantity": 2,
+    "type": "M2 x 3 socket-head cap screw",
+    "max_head_diameter": 4.0,
+    "max_head_height": 2.0,
+    "pilot_diameter": 1.6,
+    "pilot_depth": 2.4,
+    "positions_xy": [
+      [
+        -6,
+        0
+      ],
+      [
+        6,
+        0
+      ]
+    ],
+    "status": "prototype plastic threads; retention untested"
+  },
+  "limits": [
+    "Fit model only. Do not infer 25 W thermal capability.",
+    "Battery is a reference solid, not a printable part.",
+    "PCB, USB and components are reference envelopes, not an assembled electrical design.",
+    "0.6 mm cell clearance is design allowance, not a validated swelling specification.",
+    "Do not machine this printed sleeve design directly in aluminium without adding insulation and revising retention."
+  ]
+}

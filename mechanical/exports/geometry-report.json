@@ -1,0 +1,382 @@
+{
+  "u1_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 8.866,
+    "bounds_mm": [
+      3.1,
+      1.1,
+      2.6
+    ]
+  },
+  "inductor_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 755.79,
+    "bounds_mm": [
+      11.8,
+      6.1,
+      10.5
+    ]
+  },
+  "input_cap_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 26.46,
+    "bounds_mm": [
+      2.7,
+      2.8,
+      3.5
+    ]
+  },
+  "c2_unmeasured_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.5,
+    "bounds_mm": [
+      0.5,
+      1.0,
+      1.0
+    ]
+  },
+  "c3_unmeasured_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 1.28,
+    "bounds_mm": [
+      1.6,
+      1.0,
+      0.8
+    ]
+  },
+  "c4_unmeasured_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.5,
+    "bounds_mm": [
+      1.0,
+      1.0,
+      0.5
+    ]
+  },
+  "c5_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 26.46,
+    "bounds_mm": [
+      2.7,
+      2.8,
+      3.5
+    ]
+  },
+  "c6_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 26.46,
+    "bounds_mm": [
+      2.7,
+      2.8,
+      3.5
+    ]
+  },
+  "c7_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 26.46,
+    "bounds_mm": [
+      2.7,
+      2.8,
+      3.5
+    ]
+  },
+  "c8_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 26.46,
+    "bounds_mm": [
+      2.7,
+      2.8,
+      3.5
+    ]
+  },
+  "c9_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 26.46,
+    "bounds_mm": [
+      2.7,
+      2.8,
+      3.5
+    ]
+  },
+  "c10_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 26.46,
+    "bounds_mm": [
+      2.7,
+      2.8,
+      3.5
+    ]
+  },
+  "r1_unmeasured_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.5,
+    "bounds_mm": [
+      1.0,
+      1.0,
+      0.5
+    ]
+  },
+  "r2_unmeasured_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.5,
+    "bounds_mm": [
+      1.0,
+      1.0,
+      0.5
+    ]
+  },
+  "r3_unmeasured_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.5,
+    "bounds_mm": [
+      1.0,
+      1.0,
+      0.5
+    ]
+  },
+  "jp1_pad_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.068,
+    "bounds_mm": [
+      1.7,
+      0.05,
+      0.8
+    ]
+  },
+  "r4_unmeasured_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.5,
+    "bounds_mm": [
+      1.0,
+      1.0,
+      0.5
+    ]
+  },
+  "c11_unmeasured_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.5,
+    "bounds_mm": [
+      1.0,
+      1.0,
+      0.5
+    ]
+  },
+  "c12_unmeasured_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.5,
+    "bounds_mm": [
+      1.0,
+      1.0,
+      0.5
+    ]
+  },
+  "r5_unmeasured_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.5,
+    "bounds_mm": [
+      1.0,
+      1.0,
+      0.5
+    ]
+  },
+  "j1_pad_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.45,
+    "bounds_mm": [
+      3.0,
+      0.05,
+      3.0
+    ]
+  },
+  "j2_pad_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.45,
+    "bounds_mm": [
+      3.0,
+      0.05,
+      3.0
+    ]
+  },
+  "j3_pad_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.45,
+    "bounds_mm": [
+      3.0,
+      0.05,
+      3.0
+    ]
+  },
+  "j4_pad_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.45,
+    "bounds_mm": [
+      3.0,
+      0.05,
+      3.0
+    ]
+  },
+  "j5_pad_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 0.113,
+    "bounds_mm": [
+      1.5,
+      0.05,
+      1.5
+    ]
+  },
+  "a30_unmeasured_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 432.0,
+    "bounds_mm": [
+      6.0,
+      6.0,
+      12.0
+    ]
+  },
+  "display_glass_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 315.0,
+    "bounds_mm": [
+      15.0,
+      1.2,
+      17.5
+    ]
+  },
+  "display_active_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 3.454,
+    "bounds_mm": [
+      10.73,
+      0.03,
+      10.73
+    ]
+  },
+  "display_lens_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 162.12,
+    "bounds_mm": [
+      16.8,
+      0.5,
+      19.3
+    ]
+  },
+  "display_fpc_keepout_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 90.0,
+    "bounds_mm": [
+      12.0,
+      1.5,
+      5.0
+    ]
+  },
+  "sleeve": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 8815.696,
+    "bounds_mm": [
+      24.0,
+      14.8,
+      112.0
+    ]
+  },
+  "carrier": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 4624.424,
+    "bounds_mm": [
+      24.0,
+      14.8,
+      113.0
+    ]
+  },
+  "front_cover": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 1117.99,
+    "bounds_mm": [
+      20.7,
+      0.8,
+      68.0
+    ]
+  },
+  "bottom_cap": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 964.417,
+    "bounds_mm": [
+      24.0,
+      14.8,
+      3.0
+    ]
+  },
+  "battery_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 9123.663,
+    "bounds_mm": [
+      18.0,
+      7.7,
+      66.0
+    ]
+  },
+  "pcb_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 760.0,
+    "bounds_mm": [
+      20.0,
+      1.0,
+      38.0
+    ]
+  },
+  "usb_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 141.093,
+    "bounds_mm": [
+      9.0,
+      3.2,
+      8.8
+    ]
+  },
+  "usb_tongue_reference": {
+    "valid": true,
+    "solids": 1,
+    "volume_mm3": 19.14,
+    "bounds_mm": [
+      6.6,
+      0.5,
+      5.8
+    ]
+  }
+}

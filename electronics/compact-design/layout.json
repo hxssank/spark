@@ -1,0 +1,1336 @@
+{
+  "revision": "compact-packing-1",
+  "status": "Component reservation study; unrouted and not fabrication-ready",
+  "coordinateSystem": "Board x across width and y from cell edge to USB edge, in mm. z is device thickness; positive z is front.",
+  "stackup": {
+    "layers": 6,
+    "thicknessMm": 1,
+    "layerRoles": [
+      "front power and components",
+      "ground return",
+      "power distribution",
+      "control signals",
+      "ground return",
+      "rear components and control"
+    ],
+    "note": "Six layers reserve WLP escape and control routing. Copper weights and dielectric stack require fabrication review; layers do not establish current or thermal capability."
+  },
+  "rules": {
+    "minimumCellSideGapMm": 0.6,
+    "minimumCellFaceGapMm": 0.6,
+    "capacitorPackage": "0805; maximum body 2.2 \u00d7 1.45 \u00d7 1.45 mm",
+    "capacitorSiteMm": [
+      2.9,
+      2.1
+    ],
+    "protection": "Keep overcharge, overdischarge, short-circuit and temperature cutoff, with bidirectional port isolation.",
+    "footprints": "Rectangles reserve occupied component and assembly space. Exact manufacturer land patterns are not implemented."
+  },
+  "versions": [
+    {
+      "id": "300",
+      "boardMm": [
+        17,
+        24,
+        1
+      ],
+      "caseMm": [
+        80,
+        20,
+        11
+      ],
+      "previousCaseMm": [
+        101,
+        20,
+        11
+      ],
+      "cellMm": [
+        51,
+        11.5,
+        6.7
+      ],
+      "baseMm": 2,
+      "transitionMm": 2,
+      "endMm": 1,
+      "wallMm": 1.2,
+      "boardZMm": -0.4,
+      "architecture": "BQ25638 combined charger and boost",
+      "components": [
+        {
+          "reference": "JBAT",
+          "label": "Service-cell termination allowance",
+          "side": "front",
+          "boundsMm": [
+            0.4,
+            0.4,
+            6.8,
+            2.4
+          ],
+          "heightMm": 1.2,
+          "kind": "reservation"
+        },
+        {
+          "reference": "RSBAT",
+          "label": "Pack current shunt",
+          "side": "front",
+          "boundsMm": [
+            7.3,
+            0.4,
+            10.3,
+            2.4
+          ],
+          "heightMm": 1,
+          "kind": "reservation"
+        },
+        {
+          "reference": "QBAT",
+          "label": "Pack disconnect FET pair",
+          "side": "front",
+          "boundsMm": [
+            10.8,
+            0.4,
+            13.8,
+            2.8
+          ],
+          "heightMm": 1.2,
+          "kind": "reservation"
+        },
+        {
+          "reference": "TH",
+          "label": "Cell temperature lead pads",
+          "side": "front",
+          "boundsMm": [
+            14.3,
+            0.4,
+            16.6,
+            2.4
+          ],
+          "heightMm": 0.2,
+          "kind": "reservation"
+        },
+        {
+          "reference": "L1",
+          "label": "XGL4030 inductor",
+          "side": "front",
+          "boundsMm": [
+            0.4,
+            3,
+            5.5,
+            8.1
+          ],
+          "heightMm": 3.2,
+          "kind": "reservation",
+          "bodyMm": [
+            4.3,
+            4.3,
+            3.1
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "U1",
+          "label": "BQ25638 charger + boost",
+          "side": "front",
+          "boundsMm": [
+            6,
+            3,
+            9.2,
+            6.6
+          ],
+          "heightMm": 1,
+          "kind": "reservation",
+          "bodyMm": [
+            2.07,
+            2.36,
+            0.7
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "CIN",
+          "label": "Input capacitor bank",
+          "side": "front",
+          "boundsMm": [
+            9.7,
+            3.3,
+            16.6,
+            7.5
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation",
+          "capacitorSites": 4
+        },
+        {
+          "reference": "COUT",
+          "label": "Output capacitor bank",
+          "side": "front",
+          "boundsMm": [
+            0.4,
+            8.6,
+            7,
+            14.9
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation",
+          "capacitorSites": 6
+        },
+        {
+          "reference": "MCU",
+          "label": "STM32G071 UCPD control",
+          "side": "front",
+          "boundsMm": [
+            7.5,
+            8,
+            12.3,
+            12.8
+          ],
+          "heightMm": 1.1,
+          "kind": "reservation",
+          "bodyMm": [
+            4,
+            4,
+            1
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "SUP1",
+          "label": "Charger bias and control passives",
+          "side": "front",
+          "boundsMm": [
+            12.8,
+            8,
+            16.6,
+            15.5
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "TEST",
+          "label": "Programming and measurement pads",
+          "side": "front",
+          "boundsMm": [
+            7.5,
+            13.3,
+            12.3,
+            15.5
+          ],
+          "heightMm": 0.15,
+          "kind": "reservation"
+        },
+        {
+          "reference": "USB",
+          "label": "USB-C shell, tails and anchors",
+          "side": "both",
+          "boundsMm": [
+            3.2,
+            16,
+            13.8,
+            24
+          ],
+          "heightMm": 3.6,
+          "kind": "reservation",
+          "rearHeightMm": 1
+        },
+        {
+          "reference": "FPC",
+          "label": "Display flex and connector pocket",
+          "side": "back",
+          "boundsMm": [
+            1.5,
+            0.5,
+            15.5,
+            5.5
+          ],
+          "heightMm": 3.45,
+          "kind": "reservation"
+        },
+        {
+          "reference": "PD",
+          "label": "TCPP03 port control",
+          "side": "back",
+          "boundsMm": [
+            0.4,
+            6,
+            5.2,
+            10.8
+          ],
+          "heightMm": 0.85,
+          "kind": "reservation",
+          "bodyMm": [
+            4,
+            4,
+            0.75
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "QUSB",
+          "label": "VBUS source/sink FET allowance",
+          "side": "back",
+          "boundsMm": [
+            5.7,
+            6,
+            9.2,
+            9.5
+          ],
+          "heightMm": 1.2,
+          "kind": "reservation"
+        },
+        {
+          "reference": "RSUSB",
+          "label": "VBUS current shunt",
+          "side": "back",
+          "boundsMm": [
+            9.7,
+            6,
+            12.8,
+            8.5
+          ],
+          "heightMm": 1,
+          "kind": "reservation"
+        },
+        {
+          "reference": "PACK",
+          "label": "MAX17311 gauge + protector",
+          "side": "back",
+          "boundsMm": [
+            13.3,
+            6,
+            16.6,
+            9.5
+          ],
+          "heightMm": 1,
+          "kind": "reservation",
+          "bodyMm": [
+            1.7,
+            2.5,
+            0.7
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "OLED",
+          "label": "Conditional OLED supply",
+          "side": "back",
+          "boundsMm": [
+            0.4,
+            11.3,
+            3.5,
+            14.4
+          ],
+          "heightMm": 1,
+          "kind": "reservation"
+        },
+        {
+          "reference": "LOLED",
+          "label": "OLED supply coil",
+          "side": "back",
+          "boundsMm": [
+            4,
+            11.3,
+            7.3,
+            14.6
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "COLED",
+          "label": "OLED rail capacitors",
+          "side": "back",
+          "boundsMm": [
+            7.8,
+            10,
+            11.1,
+            14.6
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "LDO",
+          "label": "Logic regulator + bypass",
+          "side": "back",
+          "boundsMm": [
+            11.6,
+            10,
+            14.7,
+            13.1
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "WAKE",
+          "label": "Side wake switch allowance",
+          "side": "back",
+          "boundsMm": [
+            12,
+            13.6,
+            16.6,
+            15.6
+          ],
+          "heightMm": 1,
+          "kind": "reservation"
+        },
+        {
+          "reference": "SUP2",
+          "label": "Port bias and logic passives",
+          "side": "back",
+          "boundsMm": [
+            0.4,
+            16,
+            2.7,
+            23.6
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "SUP3",
+          "label": "Logic bypass and interface passives",
+          "side": "back",
+          "boundsMm": [
+            14.3,
+            16,
+            16.6,
+            23.6
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        }
+      ],
+      "display": {
+        "boundsMm": [
+          1.0,
+          5.5,
+          16.0,
+          23
+        ],
+        "zMm": [
+          -3.55,
+          -2.35
+        ],
+        "lensBoundsMm": [
+          0.09999999999999964,
+          4.600000000000001,
+          16.9,
+          23.9
+        ],
+        "lensZMm": [
+          -5.5,
+          -5.0
+        ]
+      },
+      "unresolved": [
+        "Dressed insulated service-cell leads or a custom low-profile termination are required; the stock A30 connector is not fitted in the 2 mm transition.",
+        "Supplier land patterns, routing, vias, connector fastening, insulation and enclosure retention are not designed.",
+        "Display FPC connector, fold radius, pinout and supply remain unverified.",
+        "Capacitor site count is a packing allowance, not effective-capacitance qualification.",
+        "Power and temperature limits require a completed circuit and enclosed hardware tests."
+      ],
+      "cellConnection": "Service cell with mainboard protection. A protected removable cartridge and its contacts are not designed."
+    },
+    {
+      "id": "530",
+      "boardMm": [
+        20,
+        24,
+        1
+      ],
+      "caseMm": [
+        88,
+        23.5,
+        12
+      ],
+      "previousCaseMm": [
+        109,
+        23.5,
+        12
+      ],
+      "cellMm": [
+        59,
+        17.5,
+        6.5
+      ],
+      "baseMm": 2,
+      "transitionMm": 2,
+      "endMm": 1,
+      "wallMm": 1.2,
+      "boardZMm": -0.4,
+      "architecture": "BQ25638 combined charger and boost",
+      "components": [
+        {
+          "reference": "JBAT",
+          "label": "Service-cell termination allowance",
+          "side": "front",
+          "boundsMm": [
+            1.9,
+            0.4,
+            8.3,
+            2.4
+          ],
+          "heightMm": 1.2,
+          "kind": "reservation"
+        },
+        {
+          "reference": "RSBAT",
+          "label": "Pack current shunt",
+          "side": "front",
+          "boundsMm": [
+            8.8,
+            0.4,
+            11.8,
+            2.4
+          ],
+          "heightMm": 1,
+          "kind": "reservation"
+        },
+        {
+          "reference": "QBAT",
+          "label": "Pack disconnect FET pair",
+          "side": "front",
+          "boundsMm": [
+            12.3,
+            0.4,
+            15.3,
+            2.8
+          ],
+          "heightMm": 1.2,
+          "kind": "reservation"
+        },
+        {
+          "reference": "TH",
+          "label": "Cell temperature lead pads",
+          "side": "front",
+          "boundsMm": [
+            15.8,
+            0.4,
+            18.1,
+            2.4
+          ],
+          "heightMm": 0.2,
+          "kind": "reservation"
+        },
+        {
+          "reference": "L1",
+          "label": "XGL4030 inductor",
+          "side": "front",
+          "boundsMm": [
+            1.9,
+            3,
+            7.0,
+            8.1
+          ],
+          "heightMm": 3.2,
+          "kind": "reservation",
+          "bodyMm": [
+            4.3,
+            4.3,
+            3.1
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "U1",
+          "label": "BQ25638 charger + boost",
+          "side": "front",
+          "boundsMm": [
+            7.5,
+            3,
+            10.7,
+            6.6
+          ],
+          "heightMm": 1,
+          "kind": "reservation",
+          "bodyMm": [
+            2.07,
+            2.36,
+            0.7
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "CIN",
+          "label": "Input capacitor bank",
+          "side": "front",
+          "boundsMm": [
+            11.2,
+            3.3,
+            18.1,
+            7.5
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation",
+          "capacitorSites": 4
+        },
+        {
+          "reference": "COUT",
+          "label": "Output capacitor bank",
+          "side": "front",
+          "boundsMm": [
+            1.9,
+            8.6,
+            8.5,
+            14.9
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation",
+          "capacitorSites": 6
+        },
+        {
+          "reference": "MCU",
+          "label": "STM32G071 UCPD control",
+          "side": "front",
+          "boundsMm": [
+            9.0,
+            8,
+            13.8,
+            12.8
+          ],
+          "heightMm": 1.1,
+          "kind": "reservation",
+          "bodyMm": [
+            4,
+            4,
+            1
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "SUP1",
+          "label": "Charger bias and control passives",
+          "side": "front",
+          "boundsMm": [
+            14.3,
+            8,
+            18.1,
+            15.5
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "TEST",
+          "label": "Programming and measurement pads",
+          "side": "front",
+          "boundsMm": [
+            9.0,
+            13.3,
+            13.8,
+            15.5
+          ],
+          "heightMm": 0.15,
+          "kind": "reservation"
+        },
+        {
+          "reference": "USB",
+          "label": "USB-C shell, tails and anchors",
+          "side": "both",
+          "boundsMm": [
+            4.7,
+            16,
+            15.3,
+            24
+          ],
+          "heightMm": 3.6,
+          "kind": "reservation",
+          "rearHeightMm": 1
+        },
+        {
+          "reference": "FPC",
+          "label": "Display flex and connector pocket",
+          "side": "back",
+          "boundsMm": [
+            3.0,
+            0.5,
+            17.0,
+            5.5
+          ],
+          "heightMm": 3.45,
+          "kind": "reservation"
+        },
+        {
+          "reference": "PD",
+          "label": "TCPP03 port control",
+          "side": "back",
+          "boundsMm": [
+            1.9,
+            6,
+            6.7,
+            10.8
+          ],
+          "heightMm": 0.85,
+          "kind": "reservation",
+          "bodyMm": [
+            4,
+            4,
+            0.75
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "QUSB",
+          "label": "VBUS source/sink FET allowance",
+          "side": "back",
+          "boundsMm": [
+            7.2,
+            6,
+            10.7,
+            9.5
+          ],
+          "heightMm": 1.2,
+          "kind": "reservation"
+        },
+        {
+          "reference": "RSUSB",
+          "label": "VBUS current shunt",
+          "side": "back",
+          "boundsMm": [
+            11.2,
+            6,
+            14.3,
+            8.5
+          ],
+          "heightMm": 1,
+          "kind": "reservation"
+        },
+        {
+          "reference": "PACK",
+          "label": "MAX17311 gauge + protector",
+          "side": "back",
+          "boundsMm": [
+            14.8,
+            6,
+            18.1,
+            9.5
+          ],
+          "heightMm": 1,
+          "kind": "reservation",
+          "bodyMm": [
+            1.7,
+            2.5,
+            0.7
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "OLED",
+          "label": "Conditional OLED supply",
+          "side": "back",
+          "boundsMm": [
+            1.9,
+            11.3,
+            5.0,
+            14.4
+          ],
+          "heightMm": 1,
+          "kind": "reservation"
+        },
+        {
+          "reference": "LOLED",
+          "label": "OLED supply coil",
+          "side": "back",
+          "boundsMm": [
+            5.5,
+            11.3,
+            8.8,
+            14.6
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "COLED",
+          "label": "OLED rail capacitors",
+          "side": "back",
+          "boundsMm": [
+            9.3,
+            10,
+            12.6,
+            14.6
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "LDO",
+          "label": "Logic regulator + bypass",
+          "side": "back",
+          "boundsMm": [
+            13.1,
+            10,
+            16.2,
+            13.1
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "WAKE",
+          "label": "Side wake switch allowance",
+          "side": "back",
+          "boundsMm": [
+            13.5,
+            13.6,
+            18.1,
+            15.6
+          ],
+          "heightMm": 1,
+          "kind": "reservation"
+        },
+        {
+          "reference": "SUP2",
+          "label": "Port bias and logic passives",
+          "side": "back",
+          "boundsMm": [
+            1.9,
+            16,
+            4.2,
+            23.6
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "SUP3",
+          "label": "Logic bypass and interface passives",
+          "side": "back",
+          "boundsMm": [
+            15.8,
+            16,
+            18.1,
+            23.6
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        }
+      ],
+      "display": {
+        "boundsMm": [
+          2.5,
+          5.5,
+          17.5,
+          23
+        ],
+        "zMm": [
+          -3.55,
+          -2.35
+        ],
+        "lensBoundsMm": [
+          1.5999999999999996,
+          4.600000000000001,
+          18.4,
+          23.9
+        ],
+        "lensZMm": [
+          -6.0,
+          -5.5
+        ]
+      },
+      "unresolved": [
+        "Dressed insulated service-cell leads or a custom low-profile termination are required; the stock A30 connector is not fitted in the 2 mm transition.",
+        "Supplier land patterns, routing, vias, connector fastening, insulation and enclosure retention are not designed.",
+        "Display FPC connector, fold radius, pinout and supply remain unverified.",
+        "Capacitor site count is a packing allowance, not effective-capacitance qualification.",
+        "Power and temperature limits require a completed circuit and enclosed hardware tests."
+      ],
+      "cellConnection": "Service cell with mainboard protection. A protected removable cartridge and its contacts are not designed."
+    },
+    {
+      "id": "850",
+      "boardMm": [
+        20,
+        28,
+        1
+      ],
+      "caseMm": [
+        99,
+        24,
+        12
+      ],
+      "previousCaseMm": [
+        116,
+        24,
+        14.8
+      ],
+      "cellMm": [
+        66,
+        18,
+        7.7
+      ],
+      "baseMm": 2,
+      "transitionMm": 2,
+      "endMm": 1,
+      "wallMm": 1.2,
+      "boardZMm": -0.4,
+      "architecture": "TPS61288 boost with separate BQ25628 charger",
+      "components": [
+        {
+          "reference": "JBAT",
+          "label": "Service-cell termination allowance",
+          "side": "front",
+          "boundsMm": [
+            0.4,
+            0.4,
+            7,
+            2.4
+          ],
+          "heightMm": 1.2,
+          "kind": "reservation"
+        },
+        {
+          "reference": "RSBAT",
+          "label": "Pack current shunt",
+          "side": "front",
+          "boundsMm": [
+            7.5,
+            0.4,
+            10.5,
+            2.4
+          ],
+          "heightMm": 1,
+          "kind": "reservation"
+        },
+        {
+          "reference": "QBAT",
+          "label": "Pack disconnect FET pair",
+          "side": "front",
+          "boundsMm": [
+            11,
+            0.4,
+            14,
+            3.4
+          ],
+          "heightMm": 1.2,
+          "kind": "reservation"
+        },
+        {
+          "reference": "TH",
+          "label": "Cell temperature lead pads",
+          "side": "front",
+          "boundsMm": [
+            14.5,
+            0.4,
+            19.6,
+            2.4
+          ],
+          "heightMm": 0.2,
+          "kind": "reservation"
+        },
+        {
+          "reference": "L1",
+          "label": "XGL7030 power inductor",
+          "side": "front",
+          "boundsMm": [
+            0.4,
+            3,
+            9.2,
+            11.8
+          ],
+          "heightMm": 3.2,
+          "kind": "reservation",
+          "bodyMm": [
+            8,
+            8,
+            3.1
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "U1",
+          "label": "TPS61288 boost",
+          "side": "front",
+          "boundsMm": [
+            9.7,
+            4,
+            13.3,
+            8.3
+          ],
+          "heightMm": 1.1,
+          "kind": "reservation",
+          "bodyMm": [
+            2.6,
+            3.1,
+            1
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "CIN",
+          "label": "Input capacitor bank",
+          "side": "front",
+          "boundsMm": [
+            13.8,
+            3.9,
+            19.6,
+            6.0
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation",
+          "capacitorSites": 2
+        },
+        {
+          "reference": "COUT",
+          "label": "Output bulk capacitor bank",
+          "side": "front",
+          "boundsMm": [
+            0.4,
+            12.3,
+            12,
+            18.6
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation",
+          "capacitorSites": 8
+        },
+        {
+          "reference": "SUP1",
+          "label": "Boost bias and compensation",
+          "side": "front",
+          "boundsMm": [
+            9.7,
+            8.8,
+            13.3,
+            11.8
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "CHARGE",
+          "label": "BQ25628 charger and bias",
+          "side": "front",
+          "boundsMm": [
+            14,
+            10,
+            19.6,
+            14
+          ],
+          "heightMm": 1.2,
+          "kind": "reservation",
+          "bodyMm": [
+            2.5,
+            3,
+            0.8
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "LCHARGE",
+          "label": "Charger inductor allowance",
+          "side": "front",
+          "boundsMm": [
+            14.7,
+            14.5,
+            19.6,
+            19.4
+          ],
+          "heightMm": 3.2,
+          "kind": "reservation"
+        },
+        {
+          "reference": "SUP4",
+          "label": "0402 charger control passives",
+          "side": "front",
+          "boundsMm": [
+            12.5,
+            14.5,
+            14.2,
+            19.5
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "USB",
+          "label": "USB-C shell, tails and anchors",
+          "side": "both",
+          "boundsMm": [
+            4.7,
+            20,
+            15.3,
+            28
+          ],
+          "heightMm": 3.6,
+          "kind": "reservation",
+          "rearHeightMm": 1
+        },
+        {
+          "reference": "FPC",
+          "label": "Display flex and connector pocket",
+          "side": "back",
+          "boundsMm": [
+            3,
+            4.5,
+            17,
+            9.5
+          ],
+          "heightMm": 3.45,
+          "kind": "reservation"
+        },
+        {
+          "reference": "MCU",
+          "label": "STM32G071 UCPD control",
+          "side": "back",
+          "boundsMm": [
+            0.4,
+            10,
+            5.2,
+            14.8
+          ],
+          "heightMm": 1.1,
+          "kind": "reservation",
+          "bodyMm": [
+            4,
+            4,
+            1
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "PD",
+          "label": "TCPP03 port control",
+          "side": "back",
+          "boundsMm": [
+            5.7,
+            10,
+            10.5,
+            14.8
+          ],
+          "heightMm": 0.85,
+          "kind": "reservation",
+          "bodyMm": [
+            4,
+            4,
+            0.75
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "QUSB",
+          "label": "VBUS source/sink FET allowance",
+          "side": "back",
+          "boundsMm": [
+            11,
+            10,
+            14.5,
+            13.5
+          ],
+          "heightMm": 1.2,
+          "kind": "reservation"
+        },
+        {
+          "reference": "RSUSB",
+          "label": "VBUS current shunt",
+          "side": "back",
+          "boundsMm": [
+            15,
+            10,
+            19.6,
+            12.5
+          ],
+          "heightMm": 1,
+          "kind": "reservation"
+        },
+        {
+          "reference": "PACK",
+          "label": "MAX17311 gauge + protector",
+          "side": "back",
+          "boundsMm": [
+            0.4,
+            0.4,
+            3.7,
+            3.9
+          ],
+          "heightMm": 1,
+          "kind": "reservation",
+          "bodyMm": [
+            1.7,
+            2.5,
+            0.7
+          ],
+          "dimensionBasis": "Manufacturer package outline; heights for BQ25638, BQ25628 and MAX17311 are provisional allowances, not verified maximum dimensions."
+        },
+        {
+          "reference": "OLED",
+          "label": "Conditional OLED supply",
+          "side": "back",
+          "boundsMm": [
+            4.2,
+            0.4,
+            7.3,
+            3.5
+          ],
+          "heightMm": 1,
+          "kind": "reservation"
+        },
+        {
+          "reference": "LOLED",
+          "label": "OLED supply coil",
+          "side": "back",
+          "boundsMm": [
+            7.8,
+            0.4,
+            11.1,
+            3.7
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "COLED",
+          "label": "OLED rail capacitors",
+          "side": "back",
+          "boundsMm": [
+            11.6,
+            0.4,
+            15,
+            3.9
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "LDO",
+          "label": "Logic regulator + bypass",
+          "side": "back",
+          "boundsMm": [
+            15.5,
+            0.4,
+            19.6,
+            3.9
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "WAKE",
+          "label": "Side wake switch allowance",
+          "side": "back",
+          "boundsMm": [
+            15,
+            13,
+            19.6,
+            15
+          ],
+          "heightMm": 1,
+          "kind": "reservation"
+        },
+        {
+          "reference": "TEST",
+          "label": "Programming and measurement pads",
+          "side": "back",
+          "boundsMm": [
+            0.4,
+            15.3,
+            5.2,
+            19.5
+          ],
+          "heightMm": 0.15,
+          "kind": "reservation"
+        },
+        {
+          "reference": "SUP2",
+          "label": "Port bias and control passives",
+          "side": "back",
+          "boundsMm": [
+            9.7,
+            15.3,
+            12.2,
+            19.5
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "SUP3",
+          "label": "Logic bypass and interface passives",
+          "side": "back",
+          "boundsMm": [
+            12.7,
+            15.5,
+            19.6,
+            19.5
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation"
+        },
+        {
+          "reference": "CLOCAL",
+          "label": "Local VOUT/PGND capacitors",
+          "side": "front",
+          "boundsMm": [
+            13.8,
+            6.5,
+            19.6,
+            8.6
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation",
+          "capacitorSites": 2
+        },
+        {
+          "reference": "CCHARGE",
+          "label": "Charger rail capacitor bank",
+          "side": "front",
+          "boundsMm": [
+            0.4,
+            19.2,
+            3.3,
+            27.6
+          ],
+          "heightMm": 1.55,
+          "kind": "reservation",
+          "capacitorSites": 4
+        },
+        {
+          "reference": "QSINK",
+          "label": "Separate charger-path FET allowance",
+          "side": "back",
+          "boundsMm": [
+            5.7,
+            15.3,
+            9.2,
+            18.8
+          ],
+          "heightMm": 1.2,
+          "kind": "reservation"
+        }
+      ],
+      "display": {
+        "boundsMm": [
+          2.5,
+          9.5,
+          17.5,
+          27
+        ],
+        "zMm": [
+          -3.55,
+          -2.35
+        ],
+        "lensBoundsMm": [
+          1.5999999999999996,
+          8.600000000000001,
+          18.4,
+          27.9
+        ],
+        "lensZMm": [
+          -6.0,
+          -5.5
+        ]
+      },
+      "unresolved": [
+        "Dressed insulated service-cell leads or a custom low-profile termination are required; the stock A30 connector is not fitted in the 2 mm transition.",
+        "Supplier land patterns, routing, vias, connector fastening, insulation and enclosure retention are not designed.",
+        "Display FPC connector, fold radius, pinout and supply remain unverified.",
+        "Capacitor site count is a packing allowance, not effective-capacitance qualification.",
+        "Power and temperature limits require a completed circuit and enclosed hardware tests.",
+        "Charger local high-frequency bypass remains beside CHARGE; bulk-cap placement and the local VOUT loop require circuit and routing review."
+      ],
+      "cellConnection": "Service cell with mainboard protection. A protected removable cartridge and its contacts are not designed."
+    }
+  ]
+}
